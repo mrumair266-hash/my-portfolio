@@ -2,7 +2,7 @@
 
 .container {
   min-height: 100vh;
-  background: linear-gradient(135deg, #4F46E5 0%, #F59E0B 25%, #EF4444 50%, #3B82F6 75%, #10B981 100%);
+  background: #ffffff;
   color: #333;
   font-family: 'Inter', sans-serif;
   overflow-x: hidden;
@@ -163,7 +163,7 @@
   font-weight: 900;
   margin: 0 0 1rem 0;
   color: #000;
-  text-shadow: 0 0 30px rgba(255, 255, 255, 0.5);
+  text-shadow: none;
   letter-spacing: -2px;
   animation: glowPulse 2.5s ease-in-out 1s;
 }
@@ -214,12 +214,10 @@
 }
 
 .tagline span {
-  color: #fff;
+  color: #000;
   font-size: 1.4rem;
   font-weight: 600;
-  text-shadow: 
-    2px 2px 8px rgba(0, 0, 0, 0.5),
-    -2px -2px 8px rgba(85, 10, 53, 0.4);
+  text-shadow: none;
 }
 
 .tagline strong {
@@ -370,8 +368,7 @@
 /* Sections */
 .section {
   padding: 6rem 2rem;
-  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 50%, #1f1f1f 100%);
-  backdrop-filter: blur(20px);
+  background: #ffffff;
   position: relative;
 }
 
@@ -394,8 +391,8 @@
   font-size: 3rem;
   text-align: center;
   margin-bottom: 4rem;
-  color: white;
-  text-shadow: 0 0 6px var(--glow-base);
+  color: #000;
+  text-shadow: none;
   transition: text-shadow var(--transition-duration) ease;
   font-weight: 800;
   letter-spacing: -1px;
@@ -446,25 +443,24 @@
 .aboutText p {
   font-size: clamp(1.2rem, 2.5vw, 1.8rem);
   line-height: 1.5;
-  color: #ffffff;
+  color: #000;
   margin: 0;
   text-align: center;
   font-weight: 600;
   max-width: 65ch;
-  text-shadow: 0 0 6px var(--glow-base);
+  text-shadow: none;
 }
 
 .infoCard {
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(0, 0, 0, 0.9);
   padding: 2.5rem;
   border-radius: 25px;
   box-shadow: 
-    0 8px 32px rgba(255, 255, 255, 0.2),
-    0 0 0 1px rgba(255, 255, 255, 0.3),
-    inset 0 1px 0 rgba(255, 255, 255, 0.4);
+    0 12px 24px rgba(0, 0, 0, 0.15),
+    0 0 0 1px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(15px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  transition: all 0.3s ease-in-out;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  transition: all 0.25s ease-in-out;
   animation: fadeInBlur 0.7s ease-out;
   position: relative;
   width: 120%;
@@ -485,22 +481,23 @@
 
 .infoCard:hover,
 .infoCard:focus {
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.95);
   backdrop-filter: blur(20px);
-  transform: translateY(-5px);
+  transform: translateY(-5px) scale(1.02);
   box-shadow: 
     0 15px 40px rgba(0, 0, 0, 0.2),
     0 0 0 1px rgba(255, 255, 255, 0.3),
-    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    inset 0 1px 0 rgba(255, 255, 255, 0.1),
+    0 0 20px rgba(85, 10, 53, 0.25);
 }
 
 .infoCard h3 {
   margin: 0 0 1.5rem 0;
-  color: #1A1A1A;
+  color: #FFFFFF;
   font-family: 'Poppins', sans-serif;
   font-size: 1.3rem;
   font-weight: 700;
-  text-shadow: 0 0 6px var(--glow-base), 0 1px 2px rgba(255, 255, 255, 0.3);
+  text-shadow: none;
   transition: all 0.3s ease-in-out;
 }
 
@@ -517,19 +514,19 @@
 
 .infoCard li {
   padding: 0.75rem 0;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  color: rgba(0, 0, 0, 0.7);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.9);
   font-family: 'Inter', sans-serif;
   font-size: 0.95rem;
   font-weight: 500;
   letter-spacing: 0.5px;
-  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.2);
+  text-shadow: none;
   transition: all 0.3s ease-in-out;
 }
 
 .infoCard:hover li,
 .infoCard:focus li {
-  color: rgba(255, 255, 255, 0.85);
+  color: rgba(255, 255, 255, 0.95);
   border-bottom-color: rgba(255, 255, 255, 0.2);
 }
 
@@ -561,16 +558,15 @@
 }
 
 .experienceCard {
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(0, 0, 0, 0.9);
   padding: 2.5rem;
   border-radius: 25px;
   box-shadow: 
-    0 8px 32px rgba(255, 255, 255, 0.2),
-    0 0 0 1px rgba(255, 255, 255, 0.3),
-    inset 0 1px 0 rgba(255, 255, 255, 0.4);
+    0 12px 24px rgba(0, 0, 0, 0.15),
+    0 0 0 1px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(15px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  transition: all 0.3s ease-in-out;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  transition: all 0.25s ease-in-out;
   position: relative;
   overflow: hidden;
   animation: fadeInLift 0.7s ease-out;
@@ -602,13 +598,14 @@
 
 .experienceCard:hover,
 .experienceCard:focus {
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.95);
   backdrop-filter: blur(20px);
-  transform: translateY(-5px);
+  transform: translateY(-5px) scale(1.02);
   box-shadow: 
     0 15px 40px rgba(0, 0, 0, 0.2),
     0 0 0 1px rgba(255, 255, 255, 0.3),
-    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    inset 0 1px 0 rgba(255, 255, 255, 0.1),
+    0 0 20px rgba(85, 10, 53, 0.25);
 }
 
 .experienceHeader {
@@ -617,11 +614,11 @@
 
 .experienceHeader h3 {
   margin: 0 0 0.75rem 0;
-  color: #1A1A1A;
+  color: #FFFFFF;
   font-family: 'Poppins', sans-serif;
   font-size: 1.3rem;
   font-weight: 700;
-  text-shadow: 0 0 6px var(--glow-base), 0 1px 2px rgba(255, 255, 255, 0.3);
+  text-shadow: none;
   transition: all 0.3s ease-in-out;
 }
 
@@ -636,15 +633,15 @@
   font-size: 0.95rem;
   font-weight: 500;
   letter-spacing: 0.5px;
-  color: rgba(0, 0, 0, 0.7);
+  color: rgba(255, 255, 255, 0.9);
   margin-bottom: 0.5rem;
-  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.2);
+  text-shadow: none;
   transition: all 0.3s ease-in-out;
 }
 
 .experienceCard:hover .role,
 .experienceCard:focus .role {
-  color: rgba(255, 255, 255, 0.85);
+  color: rgba(255, 255, 255, 0.95);
 }
 
 .duration {
@@ -665,13 +662,13 @@
 }
 
 .experienceCard p {
-  color: #1A1A1A;
+  color: rgba(255, 255, 255, 0.9);
   font-family: 'Inter', sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5em;
   margin: 0;
-  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.2);
+  text-shadow: none;
   transition: all 0.3s ease-in-out;
 }
 
@@ -688,16 +685,15 @@
 }
 
 .skillsCategory {
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(0, 0, 0, 0.9);
   padding: 2.5rem;
   border-radius: 25px;
   box-shadow: 
-    0 8px 32px rgba(255, 255, 255, 0.2),
-    0 0 0 1px rgba(255, 255, 255, 0.3),
-    inset 0 1px 0 rgba(255, 255, 255, 0.4);
+    0 12px 24px rgba(0, 0, 0, 0.15),
+    0 0 0 1px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(15px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  transition: all 0.3s ease-in-out;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  transition: all 0.25s ease-in-out;
   position: relative;
   overflow: hidden;
   animation: fadeInLift 0.7s ease-out;
@@ -709,23 +705,24 @@
 
 .skillsCategory:hover,
 .skillsCategory:focus {
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.95);
   backdrop-filter: blur(20px);
-  transform: translateY(-5px);
+  transform: translateY(-5px) scale(1.02);
   box-shadow: 
     0 15px 40px rgba(0, 0, 0, 0.2),
     0 0 0 1px rgba(255, 255, 255, 0.3),
-    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    inset 0 1px 0 rgba(255, 255, 255, 0.1),
+    0 0 20px rgba(85, 10, 53, 0.25);
 }
 
 .skillsCategory h3 {
   margin: 0 0 2rem 0;
-  color: #1A1A1A;
+  color: #FFFFFF;
   font-family: 'Poppins', sans-serif;
   font-size: 1.3rem;
   text-align: center;
   font-weight: 700;
-  text-shadow: 0 0 6px var(--glow-base), 0 1px 2px rgba(255, 255, 255, 0.3);
+  text-shadow: none;
   transition: all 0.3s ease-in-out;
 }
 
@@ -742,20 +739,20 @@
 }
 
 .skillTag {
-  background: rgba(0, 0, 0, 0.1);
-  color: #1A1A1A;
+  background: rgba(255, 255, 255, 0.1);
+  color: #FFFFFF;
   padding: 0.75rem 1.5rem;
   border-radius: 25px;
   font-family: 'Inter', sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5em;
-  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.2);
+  text-shadow: none;
   transition: all 0.3s ease-in-out;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   position: relative;
   overflow: hidden;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .skillsCategory:hover .skillTag,
@@ -780,17 +777,16 @@
 }
 
 .educationCard {
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(0, 0, 0, 0.9);
   padding: 2.5rem;
   border-radius: 25px;
   box-shadow: 
-    0 8px 32px rgba(255, 255, 255, 0.2),
-    0 0 0 1px rgba(255, 255, 255, 0.3),
-    inset 0 1px 0 rgba(255, 255, 255, 0.4);
+    0 12px 24px rgba(0, 0, 0, 0.15),
+    0 0 0 1px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(15px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(0, 0, 0, 0.2);
   text-align: center;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.25s ease-in-out;
   position: relative;
   overflow: hidden;
   animation: fadeInLift 0.7s ease-out;
@@ -818,24 +814,25 @@
 
 .educationCard:hover,
 .educationCard:focus {
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.95);
   backdrop-filter: blur(20px);
-  transform: translateY(-5px);
+  transform: translateY(-5px) scale(1.02);
   box-shadow: 
     0 15px 40px rgba(0, 0, 0, 0.2),
     0 0 0 1px rgba(255, 255, 255, 0.3),
-    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    inset 0 1px 0 rgba(255, 255, 255, 0.1),
+    0 0 20px rgba(85, 10, 53, 0.25);
 }
 
 .educationCard h3 {
   margin: 0 0 0.75rem 0;
-  color: #1A1A1A;
+  color: #FFFFFF;
   font-family: 'Poppins', sans-serif;
   font-size: 1.3rem;
   font-weight: 700;
   position: relative;
   z-index: 1;
-  text-shadow: 0 0 6px var(--glow-base), 0 1px 2px rgba(255, 255, 255, 0.3);
+  text-shadow: none;
   transition: all 0.3s ease-in-out;
 }
 
@@ -845,7 +842,7 @@
 }
 
 .educationCard p {
-  color: rgba(0, 0, 0, 0.7);
+  color: rgba(255, 255, 255, 0.9);
   font-family: 'Inter', sans-serif;
   font-size: 0.95rem;
   font-weight: 500;
@@ -853,13 +850,13 @@
   margin: 0 0 1.5rem 0;
   position: relative;
   z-index: 1;
-  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.2);
+  text-shadow: none;
   transition: all 0.3s ease-in-out;
 }
 
 .educationCard:hover p,
 .educationCard:focus p {
-  color: rgba(255, 255, 255, 0.85);
+  color: rgba(255, 255, 255, 0.95);
 }
 
 .status {
@@ -897,16 +894,15 @@
 }
 
 .contactCard {
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(0, 0, 0, 0.9);
   padding: 3rem;
   border-radius: 25px;
   box-shadow: 
-    0 8px 32px rgba(255, 255, 255, 0.2),
-    0 0 0 1px rgba(255, 255, 255, 0.3),
-    inset 0 1px 0 rgba(255, 255, 255, 0.4);
+    0 12px 24px rgba(0, 0, 0, 0.15),
+    0 0 0 1px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(15px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  transition: all 0.3s ease-in-out;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  transition: all 0.25s ease-in-out;
   text-align: center;
   max-width: 500px;
   width: 100%;
@@ -915,22 +911,23 @@
 
 .contactCard:hover,
 .contactCard:focus {
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.95);
   backdrop-filter: blur(20px);
-  transform: translateY(-5px);
+  transform: translateY(-5px) scale(1.02);
   box-shadow: 
     0 15px 40px rgba(0, 0, 0, 0.2),
     0 0 0 1px rgba(255, 255, 255, 0.3),
-    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    inset 0 1px 0 rgba(255, 255, 255, 0.1),
+    0 0 20px rgba(85, 10, 53, 0.25);
 }
 
 .contactCard h3 {
   margin: 0 0 1rem 0;
-  color: #1A1A1A;
+  color: #FFFFFF;
   font-family: 'Poppins', sans-serif;
   font-size: 1.3rem;
   font-weight: 700;
-  text-shadow: 0 0 6px var(--glow-base), 0 1px 2px rgba(255, 255, 255, 0.3);
+  text-shadow: none;
   transition: all 0.3s ease-in-out;
 }
 
@@ -940,13 +937,13 @@
 }
 
 .contactCard > p {
-  color: #1A1A1A;
+  color: rgba(255, 255, 255, 0.9);
   font-family: 'Inter', sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5em;
   margin: 0 0 2.5rem 0;
-  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.2);
+  text-shadow: none;
   transition: all 0.3s ease-in-out;
 }
 
