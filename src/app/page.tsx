@@ -151,7 +151,7 @@ export default function Home() {
           <div className={styles.aboutContent}>
                           <div className={styles.aboutText}>
                 <p>
-                  I'm building a career with a forward-thinking organization alongside committed professionals, where I can explore my potential and contribute in challenging, creative environments.
+                  I am building a career with a forward-thinking organization alongside committed professionals, where I can explore my potential and contribute in challenging, creative environments.
                 </p>
               </div>
             <div className={styles.personalInfo}>
