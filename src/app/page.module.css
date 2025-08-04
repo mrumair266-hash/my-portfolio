@@ -1,13 +1,5 @@
 /* Ultra Modern Portfolio Website Styles - Optimized for Performance */
 
-:root {
-  --brand-glow: #550A35;
-  --glow-base: rgba(85, 10, 53, 0.4);
-  --glow-strong: rgba(85, 10, 53, 0.8);
-  --transition-duration: 0.3s;
-  --pulse-duration: 1.5s;
-}
-
 .container {
   min-height: 100vh;
   background: linear-gradient(135deg, #4F46E5 0%, #F59E0B 25%, #EF4444 50%, #3B82F6 75%, #10B981 100%);
